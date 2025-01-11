@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work - Emre Tosun</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="language.js" defer></script>
+</head>
+<body>
+    <!-- Arkaplan animasyonları -->
+    <div class="background-animation">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+        
+        <div class="background-patterns">
+            <svg class="pattern pattern-1" viewBox="0 0 100 100" width="200" height="200">
+                <circle cx="50" cy="50" r="40" stroke="#264de4" stroke-width="0.5" fill="none"/>
+                <circle cx="50" cy="50" r="35" stroke="#264de4" stroke-width="0.5" fill="none"/>
+                <circle cx="50" cy="50" r="30" stroke="#264de4" stroke-width="0.5" fill="none"/>
+            </svg>
+            <!-- Diğer pattern'ler -->
+            <!-- ... pattern-2'den pattern-8'e kadar olan SVG'ler -->
+        </div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="index.html" class="logo-link" title="Home">
+                <span class="logo-text">Emre <b>TOSUN</b></span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html" class="nav-link" data-en="ABOUT" data-tr="HAKKIMDA">ABOUT</a></li>
+                <li><a href="work.html" class="nav-link active" data-en="WORK" data-tr="ÇALIŞMALAR">WORK</a></li>
+                <li><a href="mailto:bilgiemretosun@gmail.com" class="nav-link" data-en="EMAIL ME" data-tr="E-POSTA">EMAIL ME</a></li>
+                <li class="language-switch">
+                    <button onclick="toggleLanguage()" class="lang-btn">
+                        <span class="current-lang">EN</span>
+                        <span class="separator">/</span>
+                        <span class="other-lang">TR</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="work-container">
+        <div class="work-content">
+            <h1 data-en="My Works" data-tr="Çalışmalarım">My Works</h1>
+            
+            <div class="projects-grid">
+                <!-- Proje 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/project1.PNG" alt="Portfolio">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-en="Personal Portfolio" data-tr="Kişisel Portfolyo">Personal Portfolio</h3>
+                        <p data-en="A responsive portfolio website built with HTML, CSS, and JavaScript." 
+                           data-tr="HTML, CSS ve JavaScript ile oluşturulmuş responsive portfolyo websitesi.">
+                            A responsive portfolio website built with HTML, CSS, and JavaScript.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/OfficialMarsh/project1" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://emretosun.rf.gd/portfolio" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span data-en="Live Demo" data-tr="Canlı Demo">Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proje 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/project2.PNG" alt="QR CODE Generator">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-en="QR Code Generator" data-tr="QR Code Üreticisi">QR Code Generator</h3>
+                        <p data-en="Convert the link you want into a QR code!" 
+                           data-tr="İstediğiniz bağlantıyı QR'a çevirin!">
+                           Convert the link you want into a QR code!
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/OfficialMarsh/project2" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://emretosun.rf.gd" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span data-en="Live Demo" data-tr="Canlı Demo">Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/emreetosun/" class="social-link linkedin">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+        </a>
+        <a href="https://instagram.com/xemretosun/" class="social-link instagram">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+        </a>
+        <a href="https://x.com/marshresmi" class="social-link twitter">
+            <i class="fab fa-twitter"></i>
+            <span>Twitter</span>
+        </a>
+        <a href="https://github.com/OfficialMarsh" class="social-link github">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+        </a>
+    </div>
+</body>
+</html> 

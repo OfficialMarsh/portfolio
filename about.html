@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Emre Tosun</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="language.js" defer></script>
+</head>
+<body>
+    <!-- Arkaplan animasyonları -->
+    <div class="background-animation">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+        
+        <div class="background-patterns">
+            <svg class="pattern pattern-1" viewBox="0 0 100 100" width="200" height="200">
+                <circle cx="50" cy="50" r="40" stroke="#264de4" stroke-width="0.5" fill="none"/>
+                <circle cx="50" cy="50" r="35" stroke="#264de4" stroke-width="0.5" fill="none"/>
+                <circle cx="50" cy="50" r="30" stroke="#264de4" stroke-width="0.5" fill="none"/>
+            </svg>
+            <!-- Diğer pattern'ler -->
+            <!-- ... pattern-2'den pattern-8'e kadar olan SVG'ler -->
+        </div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="index.html" class="logo-link" title="Home">
+                <span class="logo-text">Emre <b>TOSUN</b></span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html" class="nav-link active" data-en="ABOUT" data-tr="HAKKIMDA">ABOUT</a></li>
+                <li><a href="work.html" class="nav-link" data-en="WORK" data-tr="ÇALIŞMALAR">WORK</a></li>
+                <li><a href="mailto:bilgiemretosun@gmail.com" class="nav-link" data-en="EMAIL ME" data-tr="E-POSTA">EMAIL ME</a></li>
+                <li class="language-switch">
+                    <button onclick="toggleLanguage()" class="lang-btn">
+                        <span class="current-lang">EN</span>
+                        <span class="separator">/</span>
+                        <span class="other-lang">TR</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="about-container">
+        <div class="about-content">
+            <div class="section hakkimda-section">
+                <h1 data-en="About Me" data-tr="Hakkımda">About Me</h1>
+                <div class="section-content">
+                    <p id="hakkinda-paragraf" data-en="Hello, I'm Emre Tosun. While continuing my education as a student, I am constantly developing myself in web development thanks to my interest in technology and especially Frontend development. My passion for the web world started from my childhood years and over time this interest turned into a professional goal. Today, I aim to design aesthetic and functional web interfaces that prioritize user experience.
+
+                        I focused on specializing in Frontend development and have a strong foundation in basic technologies like HTML and CSS. With these competencies, I produce user-friendly and visually impressive projects in accordance with modern web standards. My goal is to create value through both individual and team work by offering solutions that prioritize not only aesthetics but also functionality and performance.
+                        
+                        Web development is not just a technical pursuit for me, but also a creative process. Designing websites that users enjoy interacting with is one of the most important factors that motivates me. My attention to detail in my projects and my open approach to learning keeps me on a continuous development journey.
+                        
+                        On this website, you can find detailed information about my professional background and projects. My aim is to make a difference in the technology world by taking my knowledge and skills further and building a long-term career in this field." 
+                        
+                        data-tr="Merhaba, ben Emre Tosun. Şu anda bir öğrenci olarak eğitimime devam ederken, teknolojiye ve özellikle Frontend geliştirmeye olan ilgim sayesinde web geliştirme alanında kendimi sürekli olarak geliştirmekteyim. Web dünyasına olan tutkum, çocukluk yıllarımdan itibaren başladı ve zamanla bu ilgi, profesyonel bir hedefe dönüştü. Bugün, kullanıcı deneyimini ön planda tutan, estetik ve işlevsel web arayüzleri tasarlamayı hedefliyorum.
+
+                        Frontend geliştirme alanında uzmanlaşmaya odaklandım ve HTML ile CSS gibi temel teknolojilerde güçlü bir altyapıya sahibim. Bu yetkinliklerim sayesinde, modern web standartlarına uygun, kullanıcı dostu ve görsel açıdan etkileyici projeler üretiyorum. Hedefim, yalnızca estetik değil, aynı zamanda işlevselliği ve performansı ön planda tutan çözümler sunarak hem bireysel hem de ekip çalışmalarıyla değer yaratmak.
+                        
+                        Web geliştirme benim için sadece bir teknik uğraş değil, aynı zamanda bir yaratıcı süreç. Kullanıcıların etkileşimde bulunmaktan keyif aldığı web siteleri tasarlamak, beni motive eden en önemli unsurlardan biri. Projelerimde detaylara verdiğim önem ve öğrenmeye olan açık yaklaşımım, beni sürekli bir gelişim yolculuğunda tutuyor.
+                        
+                        Bu web sitesinde, profesyonel geçmişime ve projelerime dair detaylı bilgilere ulaşabilirsiniz. Amacım, bilgi ve becerilerimi daha da ileri taşıyarak, teknoloji dünyasında fark yaratmak ve bu alanda uzun vadeli bir kariyer inşa etmektir.">
+                        Hello, I'm Emre Tosun...
+                    </p>
+                </div>
+            </div>
+
+            <div class="section egitim-section">
+                <h2 data-en="Education" data-tr="Eğitim">Education</h2>
+                <div class="section-content">
+                    <p id="egitim-paragraf" data-en="I continue my education as a first-year student in the Computer Programming department at Akdeniz University. This program provides comprehensive training in software development, algorithm creation, and technology fundamentals, allowing me to advance my technical skills to an advanced level.
+
+                        I combine the theoretical knowledge I gained in the field of computer programming with my passion for Frontend development and apply it in real-world projects. During my education, I actively work to strengthen both my web development and general software skills. This process not only increases my current competencies but also provides a solid foundation for a successful career in the technology industry.
+                        
+                        My goal is to become a programmer who will add value to the professional world by using the knowledge and experience I have gained throughout my learning process in broader projects." 
+                        
+                        data-tr="Eğitim hayatıma Akdeniz Üniversitesi Bilgisayar Programcılığı bölümünde 1. sınıf öğrencisi olarak devam ediyorum. Bu program, yazılım geliştirme, algoritma oluşturma ve teknoloji temellerine dair kapsamlı bir eğitim sunarak teknik becerilerimi ileri seviyeye taşımama olanak tanıyor.
+
+                        Bilgisayar programcılığı alanında edindiğim teorik bilgileri, Frontend geliştirme tutkumla birleştirerek gerçek dünya projelerinde uyguluyorum. Eğitimim sırasında, hem web geliştirme hem de genel yazılım becerilerimi güçlendirmek için aktif olarak çalışıyorum. Bu süreç, yalnızca mevcut yetkinliklerimi artırmakla kalmıyor, aynı zamanda teknoloji sektöründe başarılı bir kariyer için sağlam bir temel oluşturmamı sağlıyor.
+                        
+                        Hedefim, öğrenim sürecim boyunca edindiğim bilgi ve deneyimleri daha geniş projelerde kullanarak, profesyonel dünyada katma değer sağlayacak bir yazılımcı olmaktır.">
+                        I continue my education...
+                    </p>
+                </div>
+            </div>
+
+            <div class="skills-section">
+                <h2 data-en="Skills" data-tr="Yetenekler">Skills</h2>
+                <div class="skills">
+                    <div class="skill-card">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-figma"></i>
+                        <span>Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/emreetosun/" class="social-link linkedin">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+        </a>
+        <a href="https://instagram.com/xemretosun/" class="social-link instagram">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+        </a>
+        <a href="https://x.com/marshresmi" class="social-link twitter">
+            <i class="fab fa-twitter"></i>
+            <span>Twitter</span>
+        </a>
+        <a href="https://github.com/OfficialMarsh" class="social-link github">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+        </a>
+    </div>
+</body>
+</html> 
